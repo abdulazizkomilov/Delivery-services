@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-#@&rk1&rd_0-5cgh$q2+nhxn1t(y38ljba&4ip5rxejnk8@i^e
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['misrservicebots.up.railway.app']
 
 
 # Application definition
@@ -42,7 +42,7 @@ MIDDLEWARE = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://127.0.0.1:8000',
+    'https://misrservicebots.up.railway.app',
 ]
 
 ROOT_URLCONF = 'tbot.urls'
