@@ -1,9 +1,9 @@
 import requests
-
+import os
 
 def get_address_from_coords(coords):
     PARAMS = {
-        "apikey": "5be3c86c-b9d7-4451-ad06-f60e4f6276b7",
+        "apikey": os.environ.get('apikey'),
         "format": "json",
         "lang": "uz",
         "kind": "house",
@@ -18,8 +18,3 @@ def get_address_from_coords(coords):
     except Exception as e:
         return "Map aniqlay olmadi😔, tashvishlanmang xodimlar locatsiyadan aniqlaydi."
 
-# if __name__ == '__main__':
-#     # даем запрос на получение адреса с координатами 37.617585, 55.751903
-#     address_str = get_address_from_coords("69.541947, 41.454158,")
-#     # распечатываем адрес
-#     print(address_str)

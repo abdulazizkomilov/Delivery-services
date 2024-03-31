@@ -1,2 +1,1 @@
-# misr_bot
-# service
+# Fast-food delivery service bot 🚚
